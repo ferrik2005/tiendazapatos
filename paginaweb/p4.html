@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=ARF7VK55Fhv_uo7A3d1CYhhLE3g2PdpUjm8tELKKsaFo-k_d6jWagqql0mwY4zHMl7CgYRZMAjMAs_4t"></script>
+    <title>TUZAPATO</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+                <h1 class="h1">TIENDA DE ZAPATOS RICARDO</h1>
+            <nav class="navegacion">
+                <a class="navegacionenlace" href="index.html">INICIO</a>
+                <a class="navegacionenlace" href="informacion.html">INFORMACION</a>
+                <a class="navegacionenlace navactivado" href="tienda.html">TIENDA</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <h2 class="h2">Producto 4</h2>
+
+        <div>
+            <img src="botas2.webp" alt="imagen del producto 4" class="producto1">
+
+            <div>
+                <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique, consequuntur vitae sint ex alias minus accusamus ab amet excepturi animi tempore, repellat corporis molestias rerum itaque at officia laborum!</p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--SELECCIONAR TALLAS--</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select>
+                    <div id="paypal-button-container"></div>
+                    <script>
+                        paypal.Buttons({
+                            createOrder: function(data, actions){
+                                return actions.order.create({
+                                    purchase_units:[{
+                                        amount: {
+                                            value: '65.00'
+                                        }
+                                    }]
+                                })
+                            },
+                            onApprove: function(data, actions){
+                                return actions.order.capture().then(function(details){
+                                    alert("Transaccion realizada"+details)
+                                })
+
+                            },
+                            onError: function(err){
+                                alert("Pago no realizado")
+                            }
+                        }).render("#paypal-button-container")
+                    </script>
+                </form>
+            </div>
+
+        </div>
+
+
+    </main>
+
+<footer class="footer">
+    <p class="footer-texto">Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

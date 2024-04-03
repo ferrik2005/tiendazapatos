@@ -1,0 +1,381 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+h1, p {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(zapateria-cuero-recurso-728.webp) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.notification {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: #db4242;
+  border-radius: 0.5rem;
+  color: white;
+  display: none;
+}
+.background{
+  margin-top: 30 rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  margin-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #53493f;
+  padding: 3rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+}
+
+#form-title {
+  text-align: center;
+  color: #f1f5f9;
+}
+
+.texto{
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-btn {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #6366f1;
+  color: #eef2ff;
+  transition: background 0.2s ease-in;
+}
+
+.form-btn:hover {
+  background-color: #4f46e5;
+}
+
+.form-input {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  color: #000000;
+}
+
+.show-notification {
+  display: block;
+}
+
+.alinear{
+  align-items: center;
+}
+:root{
+  --blanco:#FFFFFF;
+  --oscuro:#000000;
+  --grisClaro:#9c9c9c;
+  --fuente:'Roboto',sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: var(--fuente);
+}
+h1,h2,h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--fuente);
+}
+.hero{
+  background-image: url(61g2GQrEUuL._AC_SY695_.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 800px;
+  position: relative;
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.contenedor{
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero a{
+  display: grid;
+  place-self: center;
+}
+.row2{
+  display: flex;
+}
+.header{
+  font-family: var(--fuente);
+  text-align: center;
+  background-color: #2e2b2b;
+  padding: 0.8rem;
+  
+}
+.h1{
+  color: var(--blanco);
+  font-size: 4rem;
+
+}
+.h2grande{
+  font-size: 3.2rem;
+  color: #FFFFFF;
+  margin-bottom: 6rem;
+}
+.pinicio{
+  text-align: center;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+}
+.boton{
+  font-family: var(--fuente); 
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: var(--oscuro);
+  padding:1rem 2rem;
+  border: none;
+  font-size: 2.4rem;
+  width: 90%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.boton:hover{
+  background-color: cornflowerblue;
+}
+.footer{
+  background-color: black;
+  padding: 0.5REM 1REM;
+}
+.footer-texto{
+  color: #FFFFFF;
+  font-family: var(--fuente);
+  text-align: center;
+  font-size:1.2rem;
+}
+.navegacion{
+  background-color: var(--oscuro);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.navegacion a{
+  text-decoration: none;
+  font-family: var(--fuente);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.seccion1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:6rem;
+}
+.h2{
+  font-size: 3.2rem;
+}
+.p{
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
+.brandimg{
+  width: 100px;
+  height: 100px;
+  margin-left: 67rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 4rem;
+}
+
+.producto{
+  background-color: var(--oscuro);
+  padding: 1rem;
+}
+.producto__nombre{
+  font-size: 4rem;
+  color: var(--blanco);
+  text-align: center;
+}
+.producto__precio{
+  font-size: 2.8rem;
+  color: var(--blanco);
+  text-align: center;
+}
+.producto a{
+  text-decoration: none;
+}
+
+.main{
+  box-shadow: 0px 5px 15px 0px gray;
+  background-color: white;
+  padding: 5rem 33rem;
+  border-radius: 1rem;
+  background-image: url(vb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parte1 h3{
+  text-align: center;
+  font-weight: 2rem;
+}
+.parte1 p{
+  text-align: center;
+  font-size: 1rem;
+}
+.parte1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+.producto:hover{
+  background-color: cornflowerblue;
+  transition: background-color .5s ease;
+}
+.pro{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 7rem;
+}
+.formulario{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:2rem
+}
+.formulario__campo{
+  border: 1rem solid var(--primarioOBSCURO);
+  color: var(--negro);
+  font-size: 2rem;
+  font-family: var(--fuente);
+  padding: 1rem;
+}
+.boton2{
+  background-color: var(--oscuro);
+  border: none;
+  font-size: 3rem;
+  font-family: var(--fuente);
+  padding: 2rem;
+  transition: background-color .3s ease;
+  grid-column: 1/3;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.boton2:hover{
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+.navegacionenlace{
+  font-family: var(--fuente);
+  color: var(--blanco);
+  font-size: 3rem;
+}
+.navegacionenlace:hover,.navactivado{
+  color: cornflowerblue;
+  transition: background-color .5s ease;
+}
+.imagen{ 
+  min-height: 450px;
+  min-width: 350px
+}
+.line{
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 1024px;
+  padding: 3rem 0rem;
+}
+*,*::before, *::after{
+  box-sizing: inherit;
+}
+.ola{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+.parte1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+.producto1{
+  background-color: var(--oscuro);
+  padding: 1rem;
+}
+@media (max-width:768px){
+
+  .main{
+      display: grid;
+      justify-content: center;
+      padding: 2rem 20rem;
+  }
+  .lol201{
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+  .lol200{
+      margin-top: 30rem;
+      position: relative;
+
+  }
+}
+  @media all and (max-width: 768px){
+      div{
+          width:100%;
+          height:auto;
+          margin-left:-0.8rem;
+      }
+      .seccion1{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .header{
+          align-content: center;
+          }
+      }
+
+  @media all and (max-width: 840px) {
+      a.menu{
+          margin:0px;
+          padding:0px;
+          padding-left:5%;
+          display:block;
+          float:none;
+          text-align:left;
+      }
+  }
+
